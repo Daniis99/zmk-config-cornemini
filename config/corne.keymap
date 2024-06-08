@@ -33,7 +33,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &none &none    &trans   &trans    &trans    &none                         &none   &none    &kp UP    &none     &none  &none
-   &none &trans   &kp LALT &kp LSHFT &trans    &none                         &none   &kp LEFT &kp DOWN  &kp RIGHT &trans &none
+   &none &trans   &trans   &trans &trans    &none                            &none   &kp LEFT &kp DOWN  &kp RIGHT &trans &none
    &none &bt BT_CLR 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &none          &none   &bt BT_SEL 4   &bt BT_SEL 5    &trans    &trans &none
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
