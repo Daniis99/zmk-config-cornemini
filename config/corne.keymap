@@ -14,41 +14,41 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |  W  |  E  |  R  |     |   |     |  U   |  I  |  O  |     |      |
-// |      |  A  |  S  |  D  |  F  |     |   |     |  J   |  K  |  L  |  ;  |      |
-// |      |  Z  |  X  |  C  |  V  |     |   |     |  M   |  ,  |  .  |  /  |      |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// |      |     |  '  |  ,  |  .  |     |   |     |  G   |  C  |  R  |     |      |
+// |      |  A  |  O  |  E  |  U  |     |   |     |  H   |  T  |  N  |  S  |      |
+// |      |  ;  |  Q  |  J  |  K  |     |   |     |  M   |  W  |  V  |  Z  |      |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | BSPC |
                         bindings = <
-   &none     &none &kp W &kp E &kp R &none   &none &kp U  &kp I     &kp O   &none    &none
-   &none     &kp A &kp S &kp D &kp F &none   &none &kp J  &kp K     &kp L   &kp SEMI &none
-   &none     &kp Z &kp X &kp C &kp V &none   &none &kp M  &kp COMMA &kp DOT &kp FSLH &none
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &none  &none &kp SINGLE_QUOTE &kp COMMA &kp DOT &none   &none  &kp G  &kp C  &kp R  &none  &none
+   &none  &kp A &kp O &kp E &kp U &none                    &none  &kp H  &kp T  &kp N  &kp S  &none
+   &none  &kp SEMICOLON &kp Q &kp J &kp K &none            &none  &kp M  &kp W  &kp V  &kp Z  &none
+                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp BSPC
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |     |      |
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |  UP |     |     |      |
+// |      | BT1 | GUI |LALT |LSHFT |    |   |     | LFT | DOWN| RGT |     |      |
+// |      | BT1 | BT2 | BT3 | BT4 |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &none    &none       &kp N2       &kp N3       &kp N4       &none        &none   &kp N7   &kp N8 &kp N9    &none &none
-   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none          &none &kp DOWN &kp UP &kp RIGHT &trans &none
-   &none  &trans       &trans       &trans       &trans       &none         &none   &trans   &trans &trans    &trans &none
+   &none &none    &trans   &trans    &trans    &none                         &none   &none    &kp UP    &none     &none  &none
+   &none &kp LCMD &kp LALT &kp LSHFT &trans    &none                         &none   &kp LEFT &kp DOWN  &kp RIGHT &trans &none
+   &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &none          &none   &trans   &trans    &trans    &trans &none
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |  @  |  #  |  $  |     |   |     |  &  |  *  |  (  |     |      |
-// |      |     |     |     |     |     |   |     |  =  |  [  |  ]  |  \  |      |
-// |      |     |     |     |     |     |   |     |  +  |  {  |  }  | "|" |      |
+// |      |     |     |     |  =  |     |   |     |  1  |  2  |  3  |     |      |
+// |      |  +  |  -  |  *  |  /  |     |   |     |  4  |  5  |  6  |  .  |      |
+// |      |     |     |     |     |     |   |     |  7  |  8  |  9  |  0  |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &none  &none    &kp AT &kp HASH &kp DLLR &none      &none &kp AMPS  &kp ASTRK &kp LPAR &none    &none
-   &none  &trans   &trans &trans   &trans   &none      &none &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
-   &none  &trans   &trans &trans   &trans   &none      &none &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
+   &none  &none    &trans &trans   &kp EQUAL  &none              &none &kp N1  &kp N2 &kp N3 &none  &none
+   &none  &kp PLUS &kp MINUS &kp MULTIPLY  &kp SLASH  &none      &none &kp N4  &kp N5 &kp N6 &kp DOT &none
+   &none  &trans   &trans &trans   &trans   &none                &none &kp N7  &kp N8 &kp N9 &kp N0 &none
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
