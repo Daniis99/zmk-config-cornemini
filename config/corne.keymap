@@ -13,11 +13,6 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |      |     |  '  |  ,  |  .  |     |   |     |  G   |  C  |  R  |     |      |
-// |      |  A  |  O  |  E  |  U  |     |   |     |  H   |  T  |  N  |  S  |      |
-// |      |  ;  |  Q  |  J  |  K  |     |   |     |  M   |  W  |  V  |  Z  |      |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | BSPC |
                         bindings = <
    &none  &none &kp SINGLE_QUOTE &kp COMMA &kp DOT &none   &none  &kp G  &kp C  &kp R  &none  &none
    &none  &kp A &kp O &kp E &kp U &none                    &none  &kp H  &kp T  &kp N  &kp S  &none
@@ -26,11 +21,6 @@
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |  UP |     |     |      |
-// |      | BT1 | GUI |LALT |LSHFT |    |   |     | LFT | DOWN| RGT |     |      |
-// |      | BT1 | BT2 | BT3 | BT4 |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &none &none    &trans   &trans    &trans    &none                         &none   &none    &kp UP    &none     &none  &none
    &none &kp LCMD &kp LALT &kp LSHFT &trans    &none                         &none   &kp LEFT &kp DOWN  &kp RIGHT &trans &none
@@ -40,11 +30,6 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |      |     |     |     |  =  |     |   |     |  1  |  2  |  3  |     |      |
-// |      |  +  |  -  |  *  |  /  |     |   |     |  4  |  5  |  6  |  .  |      |
-// |      |     |     |     |     |     |   |     |  7  |  8  |  9  |  0  |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &none  &none    &trans &trans   &kp EQUAL  &none              &none &kp N1  &kp N2 &kp N3 &none  &none
    &none  &kp PLUS &kp MINUS &kp MULTIPLY  &kp SLASH  &none      &none &kp N4  &kp N5 &kp N6 &kp DOT &none
