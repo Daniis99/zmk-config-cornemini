@@ -41,14 +41,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |      |     |     |     |  =  |     |   |     |  1  |  2  |  3  |     |      |
+// |      |  +  |  -  |  *  |  /  |     |   |     |  4  |  5  |  6  |  .  |      |
+// |      |     |     |     |     |     |   |     |  7  |  8  |  9  |  0  |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+   &trans  &trans    &trans &trans   &kp EQUAL  &trans              &trans &kp N1  &kp N2 &kp N3 &trans  &trans
+   &trans  &kp PLUS &kp MINUS &kp MULTIPLY  &kp SLASH  &trans       &trans &kp N4  &kp N5 &kp N6 &kp DOT &trans
+   &trans  &trans   &trans &trans   &trans   &trans                 &trans &kp N7  &kp N8 &kp N9 &kp N0  &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
